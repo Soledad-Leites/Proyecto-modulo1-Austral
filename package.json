@@ -4,6 +4,7 @@
   "description": "Nuestro primer proyeto de Nodejs",
   "main": "index.html",
   "scripts": {
+    "dev" : "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Soledad Leites",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/Soledad-Leites/hoteles#readme"
+  "homepage": "https://bitbucket.org/Soledad-Leites/hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
