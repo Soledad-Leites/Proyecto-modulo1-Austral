@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+
+
+  <title>Hoteles</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Hoteles</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <!--<span class="navbar-toggler-icon"></span>-->
+      <span class="oi oi-ellipses"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Principal</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros </a></li>
+        <li class="nav-item active"><a class="nav-link" href="/precio.html">Precios</a></li>
+        <li class="nav-item"><a class="nav-link" href="/termycondiciones.html">Términos y condiciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <h1>Hoteles</h1>
+  </div>
+
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/index.html">Principal</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Precios</li>
+      </ol>
+    </nav>
+
+    <!--ESQUELETO DE PESTAÑAS-->
+
+    <ul class="nav nav-pills" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="compara-tab" data-toggle="pill" href="#compara" role="tab"
+          aria-controls="compara" aria-selected="true">Compara</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tarjetas-tab" data-toggle="pill" href="#tarjetas" role="tab" aria-controls="tarjetas"
+          aria-selected="false">Métodos de pago</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="resenias-tab" data-toggle="pill" href="#resenias" role="tab" aria-controls="resenias"
+          aria-selected="false">Reseñas</a>
+      </li>
+    </ul>
+
+    <!--PESTAÑA DE COMPARAR-->
+
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+        <div class="table-responsive">
+          <table class="table table-striped table-hover table-bordered">
+            <thead class="color-thead">
+              <th>Calidad</th>
+              <th>Montevideo</th>
+              <th>Cerro Largo</th>
+              <th>Salto</th>
+              <th>Colonia</th>
+              <th>Río Negro</th>
+              <th>Paysandú</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="oi oi-star"></span></td>
+                <td>$130</td>
+                <td>$140</td>
+                <td>$150</td>
+                <td>$160</td>
+                <td>$170</td>
+                <td>$180</td>
+              </tr>
+              <tr>
+                <td><span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                </td>
+                <td>$230</td>
+                <td>$240</td>
+                <td>$250</td>
+                <td>$260</td>
+                <td>$270</td>
+                <td>$280</td>
+              </tr>
+              <tr>
+                <td><span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span></td>
+                <td>$290</td>
+                <td>$300</td>
+                <td>$310</td>
+                <td>$320</td>
+                <td>$330</td>
+                <td>$340</td>
+              </tr>
+              <tr>
+                <td><span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span></td>
+                <td>$350</td>
+                <td>$360</td>
+                <td>$370</td>
+                <td>$380</td>
+                <td>$390</td>
+                <td>$400</td>
+              </tr>
+              <tr>
+                <td><span class="oi oi-star"></span><span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span><span class="oi oi-star"></span>
+                  <span class="oi oi-star"></span></td>
+                <td>$430</td>
+                <td>$440</td>
+                <td>$450</td>
+                <td>$460</td>
+                <td>$470</td>
+                <td>$480</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!--PESTAÑA DE FORMAS DE PAGO-->
+      <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+        <div class="accordion" id="accordionTarjetas">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEfectivo"
+                  aria-expanded="true" aria-controls="collapseEfectivo">Efectivo</button>
+              </h5>
+            </div>
+
+            <div id="collapseEfectivo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Aceptamos moneda local y extranjera.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCredito"
+                  aria-expanded="false" aria-controls="collapseCredito">Tarjeta de crédito</button>
+              </h5>
+            </div>
+            <div id="collapseCredito" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Aceptamos todas las tarjetas.
+                Contamos con planes de hasta 12 cuotas sin recargo
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="heading3">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseDebito"
+                  aria-expanded="false" aria-controls="collapseDebito">Tarjeta de débito</button>
+              </h5>
+            </div>
+            <div id="collapseDebito" class="collapse" aria-labelledby="heading3" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Aceptamos todas las tarjetas.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseObsequio"
+                  aria-expanded="false" aria-controls="collapseObsequio">Tarjeta de obsequio</button>
+              </h5>
+            </div>
+
+            <div id="collapseObsequio" class="collapse" aria-labelledby="headingFour" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Podés solicitar en redes de cobranza nuestra <strong>tarjeta obsequio</strong> para regalarsela a quien
+                tu quieras con la carga que desees.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <!--PESTAÑA DE RESEÑAS-->
+      <div class="tab-pane fade" id="resenias" role="tabpanel" aria-labelledby="resenias-tab">
+        <div class="row">
+          <div class="col-sm-4">
+            <p>
+            <h3>Mariana Sanchez</h3>
+            <p>"Súper práctico para reservar, me encantó la experiencia".</p>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>
+            <h3>Carlos Gómez</h3>
+            <p>"Unas vacaciones inolvidables, excelente servicio".</p>
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <p>
+            <h3>Santiago Perez</h3>
+            <p>"Sin dudas que se convirtieron en mi página de reservas favorita!".</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+
+      <!--REDES SOCIALES-->
+      <div class="col-sm-3  flex-column">
+
+        <h3>Seguinos</h3>
+
+        <a href="http://www.facebook.com"><img
+            src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png" /></a><br>
+
+        <a href="http://www.twitter.com"><img
+            src="https://img.icons8.com/ios-glyphs/30/000000/twitter-squared.png" /></a><br>
+
+        <a href="http://www.instagram.com"><img
+            src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png" /></a><br>
+      </div>
+
+
+      <!--DATOS FÍSICOS SOBRE EL SITIO-->
+      <div class="col-sm-4 d-flex flex-column">
+        <address>
+          <h3>Oficina Central</h3>
+          <p><span class="oi oi-home footer-address-icon"></span>18 de julio, 456, Montevideo, Uruguay</p>
+          <p><span class="oi oi-phone footer-address-icon"></span>+593012847</p>
+          <p><span class="oi oi-inbox footer-address-icon"></span>contact@cont.com</p>
+        </address>
+      </div>
+
+      <!--ENLACES DE REFERENCIA-->
+      <div class="col-sm-5 d-flex flex-column align-items-end">
+        <a href="/about.html">Nosotros</a>
+        <a href="/precio.html">Precios</a>
+        <a href="/termycondiciones.html">Términos y condiciones</a>
+        <a href="/contacto.html">Contacto</a>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

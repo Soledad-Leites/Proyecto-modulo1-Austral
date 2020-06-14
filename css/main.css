@@ -1,21 +1,54 @@
+body{
+    overflow-x: hidden;
+ }
+
 .jumbotron {
     background-color: aquamarine;
     color: black;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 3rem;
+
 }
 
 footer {
     padding: 10px 10px 0 10px;
     background-color: aquamarine;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .card-hotel {
-    flex: 1 150px;
-    padding: 2px 5px 2px 5px;
+    flex: 1 200px;
     margin-top: 10px;
 }
 
 .btn-reserva {
     width: 100%;
+}
+
+.footer-address-icon {
+    padding-right: 5px;
+    color: black;
+}
+
+.color-thead {
+    background-color: aquamarine;
+}
+
+.img-fluid {
+    max-width: 50%;
+    height: auto;
+}
+
+.tab-content {
+    padding-top: 5px;
+}
+
+.icon {
+    padding-bottom: 30px;
+}
+
+.container {
+    margin-bottom: 125px;
 }

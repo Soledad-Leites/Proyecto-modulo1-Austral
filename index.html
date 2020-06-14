@@ -1,146 +1,373 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
 
 
-    <title>Hoteles</title>
-  </head>
-  <body>
-    <div class="jumbotron">
-      <h1>Hoteles</h1>
+  <title>Hoteles</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Hoteles</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <!--<span class="navbar-toggler-icon"></span>-->
+      <span class="oi oi-ellipses"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="#">Principal</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros </a></li>
+        <li class="nav-item"><a class="nav-link" href="/precio.html">Precios</a></li>
+        <li class="nav-item"><a class="nav-link" href="/termycondiciones.html">Términos y condiciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto </a></li>
+      </ul>
     </div>
-    <div class="container">
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      <strong>2o% DE DESCUENTO!</strong><br>Si reservás en el mes de junio obtenés un 20% de descuento.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+  </nav>
+
+  <div class="jumbotron">
+    <div class="media">
+      <div class="media-body">
+        <h1 class="display-4">Hoteles</h1>
+
+      </div>
+      <img src="images/vista.png" class="img-fluid" alt="Responsive image">
+    </div>
+
+  </div>
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Principal</li>
+      </ol>
+    </nav>
+
     <div class="row">
       <div class="col-sm-4">
-      <p>
+        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false"
+          aria-controls="multiCollapse1">Donde reservar? </button>
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false"
+          aria-controls="multiCollapse2">Como funciona?</button>
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false"
+          aria-controls="multiCollapse3">Como pago?</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 collapse multi-collapse" id="reserva">
+        <p>
         <h3>Donde reservar? </h3>
         <p>Elegi la ciudad que te interesa y luego realiza la reserva.</p>
-      </p>
-    </div>
-      <div class="col-sm-4">
-      <p>
+        </p>
+      </div>
+
+      <div class="col-sm-4 collapse multi-collapse" id="funciona">
+        <p>
         <h3>Como funciona?</h3>
         <p>Busca los hoteles de acuerdo a tu preferencia.</p>
         </p>
       </div>
-      <div class="col-sm-4">
-      <p>
+
+      <div class="col-sm-4 collapse multi-collapse" id="pago">
+        <p>
         <h3>Como pago?</h3>
         <p>Utiliza tu tarjeta favorita!</p>
-      </p>
-    </div>
+        </p>
+      </div>
     </div>
     <hr>
 
-    <div class="d-flex flex-wrap flex-row-reverse">
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Montevideo</h4>
-          <p>Hotel con muy buenos servicios.</p>
-        </div>
-        <div>
-          <button type="button" class="btn btn-info btn-reserva">Info</button>
-        </div>
-        </div>  
-      
+    <!--<img src="images/vista.png" class="img-fluid" alt="Responsive image">-->
 
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Cerro Largo</h4>
-          <p>Hotel con muy buenos servicios.</p>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
+        <img src="images/hotel2.png" class="card-img-top" alt="Responsive image">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Montevideo</h5>
+          <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
+          <p class="card-text">Hotel con muy buenos servicios.</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal"
+            data-target="#contacto">Contacto</button>
         </div>
         <div>
-          <button type="button" class="btn btn-info btn-reserva">Info</button>
-        </div>
-        </div>
-      
-
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Salto</h4>
-          <p>Hotel con muy buenos servicios.</p>
-        </div>
-        <div>
-          <button type="button" class="btn btn-info btn-reserva">Info</button>
-        </div>
-      </div>
-   
-    
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Paysandu</h4>
-          <p>Hotel ubicado en el centro.</p>
-        </div>
-        <div>
-          <button type="button" class="btn btn-info btn-reserva">Info</button>
-        </div>
-      </div>
-      
-       
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Rio Negro</h4>
-          <p>Hotel cerca del rio.</p>
-        </div>
-        <div>
-          <button type="button" class="btn btn-info btn-reserva">Info</button>
+          <button type="button" class="btn btn-info btn-reserva" data-toggle="modal" data-target="#infoReserva"><span
+              class="oi oi-plus"></span> Info</button>
         </div>
       </div>
 
-    
-      <div class="card-hotel d-flex flex-column justify-content-between">
-        <div>
-          <h4>Hotel Colonia</h4>
-          <p>Hotel con vista al rio de la plata.</p>
+
+      <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
+        <img src="images/hotel.png" class="card-img-top" alt="Responsive image">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Cerro Largo</h5>
+          <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
+          <p class="card-text">Hotel con muy buenos servicios.</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal"
+            data-target="#contacto">Contacto</button>
         </div>
         <div>
-          <button type="button" class="btn btn-info btn-reserva">Info</button>
+          <button type="button" class="btn btn-info btn-reserva" data-toggle="modal" data-target="#infoReserva"><span
+              class="oi oi-plus"></span> Info</button>
+        </div>
+      </div>
+
+
+      <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
+        <img src="images/hotel2.png" class="card-img-top" alt="Responsive image">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Salto</h5>
+          <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
+          <p class="card-text">Hotel con muy buenos servicios.</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal"
+            data-target="#contacto">Contacto</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info btn-reserva" data-toggle="modal" data-target="#infoReserva"><span
+              class="oi oi-plus"></span> Info</button>
+        </div>
+      </div>
+
+
+      <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
+        <img src="images/hotel.png" class="card-img-top" alt="Responsive image">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Paysandú</h5>
+          <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
+          <p class="card-text">Hotel ubicado en el centro.</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal"
+            data-target="#contacto">Contacto</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info btn-reserva" data-toggle="modal" data-target="#infoReserva"><span
+              class="oi oi-plus"></span> Info</button>
+        </div>
+      </div>
+
+
+      <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
+        <img src="images/hotel2.png" class="card-img-top" alt="Responsive image">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Río Negro</h5>
+          <h6 class="card-subtitle text-muted "><span class="oi oi-map-marker"></span> Uruguay</h6>
+          <!--<img class="card-img-top" src="images/hotel2.png" alt="hotel img">-->
+          <p class="card-text">Hotel cerca del río.</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal"
+            data-target="#contacto">Contacto</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info btn-reserva" data-toggle="modal" data-target="#infoReserva"><span
+              class="oi oi-plus"></span> Info</button>
+        </div>
+      </div>
+
+
+      <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
+        <img src="images/hotel.png" class="card-img-top" alt="Responsive image">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Colonia</h5>
+          <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
+          <p class="card-text">Hotel con vista al río de la plata.</p>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal"
+            data-target="#contacto">Contacto</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-info btn-reserva" data-toggle="modal" data-target="#infoReserva"><span class="oi oi-plus" ></span> Info</button> 
+          
         </div>
       </div>
     </div>
 
-<footer>
-  <div class="row">
-    <div class="col-sm-4 d-flex flex-column">
-      <a href="http://www.facebook.com">Facebook</a>
-      <a href="http://www.twitter.com">Twitter</a>
-      <a href="http://www.instagram.com">Instagram</a>
+    <!--MODALS-->
+
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contacto con el Hotel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Tu e-mail:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Tu mensaje:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Suscribirme a promociones</label>
+            </div>
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <address>
-      <h3>Oficina Central</h3>
-      <p>18 de julio, 456,Montevideo,Uruguay</p>
-      <p>+593012847</p>
-      <p>contacto@contacto.com</p>
-    </address>
+
+    <div class="modal fade" id="infoReserva" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">Información para reserva</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group mb-2">
+                <label for="recipient-name" class="col-form-label">Tu e-mail:</label>
+                <input type="text" class="form-control" id="recipient-mail">
+              </div>
+              <div class="form-row">
+                <div class="col flex-column">
+                  <label for="adultos">Adultos</label>
+                  <select id="adultos" class="form-control">
+                    <option selected>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div class="col flex-column">
+                  <label for="ninios">Niños</label>
+                  <select id="ninios" class="form-control">
+                    <option selected>...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+              <div class="form-row">
+                <div class="col flex-column">
+                  <label for="habitaciones">Habitaciones</label>
+                  <select id="habitaciones" class="form-control">
+                    <option selected>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div class="col flex-column">
+                  <label for="camas">Camas</label>
+                  <select id="camas" class="form-control">
+                    <option selected>1 simple</option>
+                    <option>2 simples</option>
+                    <option>1 doble</option>
+                    <option>1 doble y 1 simple</option>
+                    <option>1 doble y 2 simples</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+              <button class="btn btn-success" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Calculando precio...
+              </button>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Continuar proceso</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-4 d-flex flex-column align-items-end">
-      <a href="http://www.facebook.com">Nosotros</a>
-      <a href="http://www.twitter.com">Precios</a>
-      <a href="http://www.instagram.com">Terminos y condiciones</a>
-    </div>
+
+
   </div>
-</div>
-</footer>
-    
-    
+  <footer>
+    <div class="row">
 
+      <!--REDES SOCIALES-->
+      <div class="col-sm-3  flex-column">
 
+        <h3>Seguinos</h3>
 
+        <a href="http://www.facebook.com"><img
+            src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png" /></a><br>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <a href="http://www.twitter.com"><img
+            src="https://img.icons8.com/ios-glyphs/30/000000/twitter-squared.png" /></a><br>
+
+        <a href="http://www.instagram.com"><img
+            src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png" /></a>
+      </div>
+
+      <!--DATOS FÍSICOS SOBRE EL SITIO-->
+      <div class="col-sm-4 d-flex flex-column">
+        <address>
+          <h3>Oficina Central</h3>
+          <p><span class="oi oi-home footer-address-icon"></span>18 de julio, 456, Montevideo, Uruguay</p>
+          <p><span class="oi oi-phone footer-address-icon"></span>+593012847</p>
+          <p><span class="oi oi-inbox footer-address-icon"></span>contact@cont.com</p>
+        </address>
+      </div>
+
+      <!--ENLACES DE REFERENCIA-->
+      <div class="col-sm-5 d-flex flex-column align-items-end">
+        <a href="/about.html">Nosotros</a>
+        <a href="/precio.html">Precios</a>
+        <a href="/termycondiciones.html">Términos y condiciones</a>
+        <a href="/contacto.html">Contacto</a>
+      </div>
     </div>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!--popover & tooltip-->
+  <script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
+  
+
+
+</body>
+
 </html>
