@@ -1,0 +1,81 @@
+@aquamarine: #7dfffd;
+@yellow: #ffe100;
+@red: #f03c00;
+@green: #50f000;
+@silver: #919090;
+
+.margenes(@top, @bottom){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+
+.relleno(@top, @right, @bottom, @left){
+    padding-top: @top;
+    padding-right: @right;
+    padding-bottom: @bottom;
+    padding-left: @left;
+}
+
+
+body {
+    overflow-x: hidden; }
+  
+  .jumbotron {
+    font-family: Verdana;
+    background-color: #7dfffd;
+    color: black;
+    .margenes(10px, 5px);
+    .relleno(3rem, 0px, 20px, 0px);
+     }
+  
+  footer {
+    background-color: #7dfffd;
+    .margenes(0px, 0px);
+    .relleno(10px, 10px, 0px, 10px);
+     }
+  
+  .img-carrusel {
+    height: min-content; }
+  
+  .card-hotel {
+    flex: 1 200px;
+    .margenes(10px, 0px);
+ }
+  
+  .btn-reserva {
+    width: 100%; }
+  
+  .footer-address-icon {
+    color: black;
+    .relleno(0px, 5px, 0px, 0px);
+     }
+  
+  .color-thead {
+    background-color: #7dfffd; }
+  
+  .img-fluid {
+    max-width: 40%;
+    height: auto; }
+  
+  .tab-content {
+    .relleno(5px, 0px, 0px, 0px);
+    }
+  
+  .icon {
+    .relleno(0px, 0px, 30px, 0px);
+     }
+  
+  .container {
+    .margenes(0px, 130px);
+    }
+  
+  .destaque {
+    color: #50f000;
+    text-shadow: 2px 0px 0px #919090, 0px 2px 0px #919090, -2px 0px 0px #919090, 0px -2px 0px #919090; }
+  
+  .tituloColor {
+    font-family: verdana;
+    font-size: 50px;
+    color: #919090;
+    text-shadow: 2px 0px 0px #f03c00, 0px 2px 0px #f03c00, -2px 0px 0px #f03c00, 0px -2px 0px #f03c00; }
+  

@@ -1,0 +1,73 @@
+body {
+  overflow-x: hidden; }
+
+.jumbotron {
+  font-family: Verdana;
+  background-color: #7dfffd;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-top: 3rem;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 0px; }
+
+footer {
+  background-color: #7dfffd;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px; }
+
+.img-carrusel {
+  height: min-content; }
+
+.card-hotel {
+  flex: 1 200px;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.btn-reserva {
+  width: 100%; }
+
+.footer-address-icon {
+  color: black;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px; }
+
+.color-thead {
+  background-color: #7dfffd; }
+
+.img-fluid {
+  max-width: 40%;
+  height: auto; }
+
+.tab-content {
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px; }
+
+.icon {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+  padding-left: 0px; }
+
+.container {
+  margin-top: 0px;
+  margin-bottom: 130px; }
+
+.destaque {
+  color: #50f000;
+  text-shadow: 2px 0px 0px #919090, 0px 2px 0px #919090, -2px 0px 0px #919090, 0px -2px 0px #919090; }
+
+.tituloColor {
+  font-family: verdana;
+  font-size: 50px;
+  color: #919090;
+  text-shadow: 2px 0px 0px #f03c00, 0px 2px 0px #f03c00, -2px 0px 0px #f03c00, 0px -2px 0px #f03c00; }

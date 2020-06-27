@@ -18,6 +18,12 @@ footer {
     margin-top: 0px;
 }
 
+.img-carrusel {
+    height: min-content;
+ 
+
+}
+
 .card-hotel {
     flex: 1 200px;
     margin-top: 10px;
@@ -37,7 +43,7 @@ footer {
 }
 
 .img-fluid {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
 }
 
@@ -51,4 +57,5 @@ footer {
 
 .container {
     margin-bottom: 125px;
+   
 }

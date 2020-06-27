@@ -1,0 +1,98 @@
+$aquamarine: #7dfffd;
+$yellow: #ffe100;
+$red: #f03c00;
+$green: #50f000;
+$silver: #919090;
+
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin relleno($top, $right, $bottom, $left){
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+body{
+    overflow-x: hidden;
+ }
+
+.jumbotron {
+    font-family: Verdana;
+    background-color: $aquamarine;
+    color: black;
+    @include margenes(10px, 5px);
+    @include relleno(3rem, 0px, 20px, 0px);
+
+}
+
+footer {
+    background-color: $aquamarine;
+    @include margenes(0px, 0px);
+    @include relleno(10px, 10px, 0px, 10px);
+}
+
+.img-carrusel {
+    height: min-content;
+ 
+
+}
+
+.card-hotel {
+    flex: 1 200px;
+    @include margenes(10px, 0px);
+}
+
+.btn-reserva {
+    width: 100%;
+}
+
+.footer-address-icon {
+    color: black;
+    @include relleno(0px, 5px, 0px, 0px);
+}
+
+.color-thead {
+    background-color: $aquamarine;
+}
+
+.img-fluid {
+    max-width: 40%;
+    height: auto;
+}
+
+.tab-content {
+    
+    @include relleno(5px, 0px, 0px, 0px);
+}
+
+.icon {
+    @include relleno(0px, 0px, 30px, 0px);
+}
+
+.container {
+    @include margenes(0px, 130px);
+   
+}
+
+.destaque {
+    color: $green;
+    text-shadow: 2px  0px 0px $silver,
+               0px  2px 0px $silver,
+              -2px  0px 0px $silver,
+               0px -2px 0px $silver;
+}
+
+.tituloColor {
+    font-family:verdana;
+    font-size:50px;
+    color: $silver;
+    text-shadow: 2px  0px 0px $red,
+               0px  2px 0px $red,
+              -2px  0px 0px $red,
+               0px -2px 0px $red;
+    
+}

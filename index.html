@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
+  <!-- build:css css/index.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-
+  <!--endbuild-->
 
 
   <title>Hoteles</title>
@@ -27,10 +28,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active"><a class="nav-link" href="#">Principal</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros </a></li>
-        <li class="nav-item"><a class="nav-link" href="/precio.html">Precios</a></li>
-        <li class="nav-item"><a class="nav-link" href="/termycondiciones.html">Términos y condiciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto </a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros </a></li>
+        <li class="nav-item"><a class="nav-link" href="./precio.html">Precios</a></li>
+        <li class="nav-item"><a class="nav-link" href="./termycondiciones.html">Términos y condiciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto </a></li>
       </ul>
     </div>
     <div class="alert alert-info alert-dismissible fade show" role="alert">
@@ -45,10 +46,10 @@
   <div class="jumbotron">
     <div class="media">
       <div class="media-body">
-        <h1 class="display-4">Hoteles</h1>
+        <h1 class="display-4" >Hoteles</h1>
 
       </div>
-      <img src="images/vista.png" class="img-fluid" alt="Responsive image">
+      <img src="./images/vista.png" class="img-fluid" alt="Responsive image">
     </div>
 
   </div>
@@ -97,12 +98,38 @@
       </div>
     </div>
     <hr>
+    
+    <!--CARRUSEL-->
+    <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="2500">
+          <img class="img-carrusel d-block w-100" src="./images/Carrusel.png" alt="Primer slide">
+        </div>
+        <div class="carousel-item" data-interval="3000">
+          <img class="img-carrusel d-block w-100" src="./images/Carrusel2.png" alt="Segundo slide">
+        </div>
+        <div class="carousel-item" data-interval="3000">
+          <img class="img-carrusel w-100" src="./images/Carrusel3.png" alt="Segundo slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true">
+        <span class="sr-only">Anterior</span>
+        </span> 
+      </a>
+      <a class="carousel-control-next" href="#carouselFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true">
+        <span class="sr-only">Siguiente</span>
+        </span> 
+      </a>
+    </div>
+
 
     <!--<img src="images/vista.png" class="img-fluid" alt="Responsive image">-->
 
     <div class="row row-cols-1 row-cols-md-3">
       <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
-        <img src="images/hotel2.png" class="card-img-top" alt="Responsive image">
+        <img src="./images/hotel2.png" class="card-img-top" alt="Responsive image">
         <div class="card-body">
           <h5 class="card-title">Hotel Montevideo</h5>
           <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
@@ -118,7 +145,7 @@
 
 
       <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
-        <img src="images/hotel.png" class="card-img-top" alt="Responsive image">
+        <img src="./images/hotel.png" class="card-img-top" alt="Responsive image">
         <div class="card-body">
           <h5 class="card-title">Hotel Cerro Largo</h5>
           <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
@@ -134,7 +161,7 @@
 
 
       <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
-        <img src="images/hotel2.png" class="card-img-top" alt="Responsive image">
+        <img src="./images/hotel2.png" class="card-img-top" alt="Responsive image">
         <div class="card-body">
           <h5 class="card-title">Hotel Salto</h5>
           <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
@@ -150,7 +177,7 @@
 
 
       <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
-        <img src="images/hotel.png" class="card-img-top" alt="Responsive image">
+        <img src="./images/hotel.png" class="card-img-top" alt="Responsive image">
         <div class="card-body">
           <h5 class="card-title">Hotel Paysandú</h5>
           <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
@@ -166,7 +193,7 @@
 
 
       <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
-        <img src="images/hotel2.png" class="card-img-top" alt="Responsive image">
+        <img src="./images/hotel2.png" class="card-img-top" alt="Responsive image">
         <div class="card-body">
           <h5 class="card-title">Hotel Río Negro</h5>
           <h6 class="card-subtitle text-muted "><span class="oi oi-map-marker"></span> Uruguay</h6>
@@ -182,14 +209,14 @@
       </div>
 
 
-      <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" data-placement="right" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
-        <img src="images/hotel.png" class="card-img-top" alt="Responsive image">
+      <div class="card card-hotel justify-content-between ml-2" data-toggle="tooltip" title='En "+ info" podrá simular una reserva y continuar con un proceso real.'>
+        <img src="./images/hotel.png" class="card-img-top" alt="Responsive image">
         <div class="card-body">
           <h5 class="card-title">Hotel Colonia</h5>
           <h6 class="card-subtitle text-muted"><span class="oi oi-map-marker"></span> Uruguay</h6>
           <p class="card-text">Hotel con vista al río de la plata.</p>
           <button type="button" class="btn btn-outline-success" data-toggle="modal"
-            data-target="#contacto">Contacto</button>
+            data-target="#contacto"  id="contactoBtn">Contacto</button>
         </div>
         <div>
           <button type="button" class="btn btn-info btn-reserva" data-toggle="modal" data-target="#infoReserva"><span class="oi oi-plus" ></span> Info</button> 
@@ -336,10 +363,10 @@
 
       <!--ENLACES DE REFERENCIA-->
       <div class="col-sm-5 d-flex flex-column align-items-end">
-        <a href="/about.html">Nosotros</a>
-        <a href="/precio.html">Precios</a>
-        <a href="/termycondiciones.html">Términos y condiciones</a>
-        <a href="/contacto.html">Contacto</a>
+        <a href="./about.html">Nosotros</a>
+        <a href="./precio.html">Precios</a>
+        <a href="./termycondiciones.html">Términos y condiciones</a>
+        <a href="./contacto.html">Contacto</a>
       </div>
     </div>
     </div>
@@ -348,26 +375,24 @@
 
 
 
-
+</div>
 
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  </div>
+  <!-- build:js js/main.js -->
+  
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <!--popover & tooltip-->
-  <script>
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-toggle="popover"]').popover();
-  });
-</script>
+  <script src="js/index.js"></script>
+<!--endbuild-->
   
 
 
 </body>
 
 </html>
+
